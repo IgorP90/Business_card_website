@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'SensalRegular';
+    src: url('../fonts/Sensal Regular/SensalRegular.ttf');
+}
+@font-face{
+    font-family: 'Rhythm-and-Jazz-Decor';
+    src: url('../fonts/Rhythm and Jazz Decor/Rhythm-and-Jazz-Decor.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Freehand' sans-serif;
+
+}
+h1,h2{
+    color: red;
+    font-family: 'SensalRegular';
+    font-size: 50px;
+    margin-left: 10%;
+    width: auto;
+}
+
+.discr{
+    width: 50%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Rhythm-and-Jazz-Decor';
+    font-size: 50px;
+}
+
+body{
+    background-image: url(../images/BlackRabbitRose_006.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 20px;
+}
+
+.phone_number{
+    display: flex;
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    color: aqua;
+    margin-left: 60%;
+}
+
+/* .phone_number>img{
+    height: 100%;
+    width: auto;
+} */
+
+a{
+    color: white;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+} 
+
+nav a{ 
+    width: auto ;
+    height: auto;
+    text-align: center;
+}
+
+#cafe_table{
+    background-image: url(../images/Cafe_table.jpg);
+    height: 533px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 500px 200px 100px;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: rgb(51, 22, 1);
+    font-family: 'Freehand';
+}
+#cafe_table>p{
+    font-size: 70px;
+    height: 100px;
+    color: rgba(233, 233, 233, 0.9);
+    margin-left: 20px;
+}
+
+#tty{
+    margin-top: 100px;
+    display: flex;
+}
+
+footer{
+    margin-bottom: 0%;
+}
