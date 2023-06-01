@@ -1,25 +1,28 @@
-document.getElementById('time').innerText = new Date().getFullYear()
 
-let am = document.getElementsByClassName('phone_number')
+const time = document.getElementById('time')
+time.innerText = new Date().getFullYear() + 'г.'
 
-const mouseOver = () => am[0].style.fontSize = '17px'
-const mouseOut = () => am[0].style.fontSize = '15px'
+const contacts = document.getElementsByClassName('contacts')
+const phone_number = contacts[0].querySelector('a').innerText
+console.log(phone_number)
+
+const mouseOver = () => contacts[0].querySelector('a').style.fontSize = '23px'
+const mouseOut = () => contacts[0].querySelector('a').style.fontSize = '20px'
 function call(){
     if(/Android/i.test(navigator.userAgent)){
         console.log('моб устройство')
-        window.location.href="tel://" + am[0]
+        window.location.href="tel://" + phone_number
     }       
     else{
         console.log('обыч устройство')  
-        window.open('https://t.me/+7123456789')  
+        window.open('https://t.me/' + phone_number)  
     }    
         
 } 
 
-am[0].addEventListener('mouseover', mouseOver) 
-am[0].addEventListener('mouseout', mouseOut) 
-am[0].addEventListener('mousedown', call)
-
+contacts[0].addEventListener('mouseover', mouseOver)    
+contacts[0].addEventListener('mouseout', mouseOut) 
+contacts[0].addEventListener('mousedown', call)
 
 
 
